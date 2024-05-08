@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "heaven-mod",
+	"version": "${version}",
+	"name": "Heaven Mod",
+	"description": "In this Mod you have Ores, Armour, Weapons and much more straight from heaven! by Lukli",
+	"authors": [
+		"Lukli"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/heaven-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.lukas.heavenmod.HeavenMod"
+		],
+		"client": [
+			"net.lukas.heavenmod.HeavenModClient"
+		],
+		"fabric-datagen": [
+			"net.lukas.heavenmod.HeavenModDataGenerator"
+		]
+	},
+	"mixins": [
+		"heaven-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
